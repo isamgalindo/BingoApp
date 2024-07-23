@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bingo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="RoundedWhiteButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:background">@drawable/rounded_square_button</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+</resources>

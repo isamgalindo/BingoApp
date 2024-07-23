@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_degradable"
+    tools:context=".BusquedaAvanzada">
+
+    <TextView
+        android:id="@+id/textViewBingo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bingo"
+        style="@style/Titles"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/busquedaAvanzada"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/blackblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBingo">
+
+        <TextView
+            android:id="@+id/tituloTendencias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Búsqueda avanzada"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            style="@style/Texts"
+            android:textStyle="bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/subirFoto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/busquedaAvanzada"
+        android:backgroundTint="@color/white"
+        android:text="Subir foto"
+        android:textColor="@color/black"
+        style="@style/Texts"
+        />
+    <Button
+        android:id="@+id/tomarFoto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subirFoto"
+        android:backgroundTint="@color/white"
+        android:text="Tomar foto"
+        android:textColor="@color/black"
+        style="@style/Texts" />
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tomarFoto"
+        android:src="@drawable/baseline_image_24"
+        />
+    <Button
+        android:id="@+id/mandarFoto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foto"
+        android:backgroundTint="@color/white"
+        android:text="Analizar foto"
+        android:textColor="@color/black"
+        style="@style/Texts"
+        />
+    <TextView
+        android:id="@+id/responseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mandarFoto"
+        android:text="Response will appear here"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
